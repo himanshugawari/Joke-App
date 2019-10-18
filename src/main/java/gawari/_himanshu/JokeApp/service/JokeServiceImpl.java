@@ -9,13 +9,14 @@ public class JokeServiceImpl implements JokeService {
 
 	private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-	public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+	public JokeServiceImpl() {
 		super();
-		this.chuckNorrisQuotes = chuckNorrisQuotes;
+		this.chuckNorrisQuotes = new ChuckNorrisQuotes();
 	}
 
 	@Override
 	public String getJoke() {
+		// TODO Auto-generated method stub
 		return this.chuckNorrisQuotes.getRandomQuote();
 	}
 
