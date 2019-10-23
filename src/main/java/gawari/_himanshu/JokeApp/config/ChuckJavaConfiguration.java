@@ -1,13 +1,14 @@
 package gawari._himanshu.JokeApp.config;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
-//Java Based Configuration example remove for spring boot version
+//Java Based Configuration added @Configuration & @Bean example remove for spring boot version
 //Also added a constructor to JokeServiceImpl remove that also
-@Configuration
+
+//comment @Configuration for xml based cofiguration added chuck-config.xml file
+//@Configuration
 public class ChuckJavaConfiguration {
 	@Bean
 	public ChuckNorrisQuotes chuckNorrisQuotes() {
