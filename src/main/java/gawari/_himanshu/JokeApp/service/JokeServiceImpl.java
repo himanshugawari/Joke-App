@@ -9,9 +9,17 @@ public class JokeServiceImpl implements JokeService {
 
 	private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-	public JokeServiceImpl() {
+	// Uncomment for normal Spring Boot version
+	/*
+	 * public JokeServiceImpl() { super(); this.chuckNorrisQuotes = new
+	 * ChuckNorrisQuotes(); }
+	 */
+
+	// Java Configuration Based Version
+	// Constructor based implementation
+	public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
 		super();
-		this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+		this.chuckNorrisQuotes = chuckNorrisQuotes;
 	}
 
 	@Override
